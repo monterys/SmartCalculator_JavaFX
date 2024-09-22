@@ -1,0 +1,15 @@
+g++ -fPIC -shared -o libcalc.so calc_model_Calculator.cc calcController.cc calcModel.cc -I"/usr/lib/jvm/java-19-openjdk-amd64/include" -I"/usr/lib/jvm/java-19-openjdk-amd64/include/linux"
+
+
+jpackage     --name monterysCalc     --input lib/     --main-jar smartCalc-1.0-jar-with-dependencies.jar     --main-class calc.app.Main     --type deb     --icon src/main/resources/iconCalc.png     --install-dir /opt/monterysCalc    --module-path /home/monterys/.m2/repository/org/openjfx/javafx-controls/22.0.1/:/home/monterys/.m2/repository/org/openjfx/javafx-fxml/22.0.1/:/home/monterys/.m2/repository/org/openjfx/javafx-base/22.0.1/:/home/monterys/.m2/repository/org/openjfx/javafx-graphics/22.0.1 --add-modules javafx.controls,javafx.fxml --app-version 1.0.3
+
+
+g++ -fPIC -dynamiclib -o libcalc.dylib calc_model_Calculator.cc calcController.cc calcModel.cc -I"/Users/monterys/Library/Java/JavaVirtualMachines/openjdk-22/Contents/Home/include" -I"/Users/monterys/Library/Java/JavaVirtualMachines/openjdk-22/Contents/Home/include/darwin"
+
+g++ -fPIC -dynamiclib -o libcreditcalc.dylib calc_model_CreditCalculator.cc creditModel.cc -I"/Users/monterys/Library/Java/JavaVirtualMachines/openjdk-22/Contents/Home/include" -I"/Users/monterys/Library/Java/JavaVirtualMachines/openjdk-22/Contents/Home/include/darwin"
+
+x86_64-w64-mingw32-g++ -shared -o libcalc.dll calc_model_Calculator.cc calcController.cc calcModel.cc -I"/usr/lib/jvm/java-19-openjdk-amd64/include" -I"/usr/lib/jvm/java-19-openjdk-amd64/include/linux"
+
+x86_64-w64-mingw32-g++ -shared -o libcreditcalc.dll calc_model_CreditCalculator.cc creditModel.cc -I"/usr/lib/jvm/java-19-openjdk-amd64/include" -I"/usr/lib/jvm/java-19-openjdk-amd64/include/linux"
+
+

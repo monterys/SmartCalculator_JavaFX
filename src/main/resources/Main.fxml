@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calc.view.CalcController">
+   <children>
+      <TextField fx:id="showLabel" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="23.0" prefHeight="39.0" prefWidth="425.0" />
+      <TextField layoutX="246.0" layoutY="227.0" prefHeight="24.0" prefWidth="60.0" fx:id="xequalsText" />
+      <Label layoutX="212.0" layoutY="231.0" text="x =" fx:id="xeqalsLabel" />
+      <Button fx:id="cos" layoutX="15.0" layoutY="219.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="cos" />
+      <Button fx:id="sin" layoutX="75.0" layoutY="219.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="sin" />
+      <Button fx:id="tan" layoutX="135.0" layoutY="219.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="tan" />
+      <Button fx:id="creditButton" layoutX="15.0" layoutY="179.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="Credit" />
+      <Button fx:id="depositButton" layoutX="108.0" layoutY="179.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" text="Deposit" />
+      <Button fx:id="acos" layoutX="15.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="acos" />
+      <Button fx:id="asin" layoutX="75.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="asin" />
+      <Button fx:id="atan" layoutX="135.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="atan" />
+      <Button fx:id="number1" layoutX="206.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="1" />
+      <Button fx:id="number2" layoutX="266.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="2" />
+      <Button fx:id="sqrt" layoutX="15.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="sqrt" />
+      <Button fx:id="scale" layoutX="75.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="x^y" />
+      <Button fx:id="number4" layoutX="206.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="4" />
+      <Button fx:id="number5" layoutX="266.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="5" />
+      <Button fx:id="openBracket" layoutX="15.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="(" />
+      <Button fx:id="closeBracket" layoutX="75.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text=")" />
+      <Button fx:id="mod" layoutX="135.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="mod" />
+      <Button fx:id="number7" layoutX="206.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="7" />
+      <Button fx:id="number8" layoutX="266.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="8" />
+      <Button fx:id="ac" layoutX="15.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="A/C" />
+      <Button fx:id="log" layoutX="75.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="log" />
+      <Button fx:id="ln" layoutX="135.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="ln" />
+      <Button layoutX="206.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="X" fx:id="x" />
+      <Button fx:id="number0" layoutX="266.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="0" />
+      <Button fx:id="backspace" layoutX="326.0" layoutY="219.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="&lt;&lt;" />
+      <Button fx:id="number3" layoutX="326.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="3" />
+      <Button fx:id="number6" layoutX="326.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="6" />
+      <Button fx:id="number9" layoutX="326.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="9" />
+      <Button fx:id="point" layoutX="326.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="." />
+      <Button fx:id="division" layoutX="386.0" layoutY="219.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="/" />
+      <Button fx:id="mult" layoutX="386.0" layoutY="259.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="*" />
+      <Button fx:id="sub" layoutX="386.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="-" />
+      <Button fx:id="sum" layoutX="386.0" layoutY="339.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="+" />
+      <Button fx:id="equals" layoutX="386.0" layoutY="379.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="=" />
+      <TableView fx:id="historyTable" layoutX="15.0" layoutY="63.0" prefHeight="105.0" prefWidth="425.0">
+         <columns>
+            <TableColumn fx:id="historyColumn" prefWidth="424.0" text="History" />
+         </columns>
+      </TableView>
+      <Button fx:id="deleteHistory" layoutX="198.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="67.0" text="delete" />
+      <Button fx:id="plot" layoutX="326.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Plot" />
+      <LineChart fx:id="lineChart" layoutX="440.0" layoutY="18.0" prefHeight="363.0" prefWidth="414.0">
+         <xAxis>
+            <NumberAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <TextField layoutX="511.0" layoutY="369.0" prefHeight="24.0" prefWidth="50.0" fx:id="xmaxValue" />
+      <Label layoutX="461.0" layoutY="373.0" prefHeight="16.0" prefWidth="50.0" text="Xmax=" fx:id="xmaxLabel" />
+      <TextField layoutX="575.0" layoutY="402.0" prefHeight="24.0" prefWidth="50.0" fx:id="xminValue" />
+      <Label layoutX="520.0" layoutY="406.0" prefHeight="16.0" prefWidth="50.0" text="Xmin=" fx:id="xminLabel" />
+      <TextField fx:id="ymaxValue" layoutX="784.0" layoutY="369.0" prefHeight="24.0" prefWidth="50.0" />
+      <Label fx:id="ymaxLabel" layoutX="734.0" layoutY="373.0" prefHeight="16.0" prefWidth="50.0" text="Ymax=" />
+      <TextField fx:id="yminValue" layoutX="734.0" layoutY="402.0" prefHeight="24.0" prefWidth="50.0" />
+      <Label fx:id="yminLabel" layoutX="684.0" layoutY="406.0" prefHeight="16.0" prefWidth="50.0" text="Ymin=" />
+      <Button fx:id="help" layoutX="266.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Help" />
+      <Button fx:id="Ee" layoutX="135.0" layoutY="299.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="E" />
+   </children>
+</Pane>
